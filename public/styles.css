@@ -207,11 +207,12 @@ header{
     display: flex;
     justify-content: center;
     align-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 20px auto 20px;
 }
 
-.carousel-item img{
-    max-width: 500px;
-    max-height: 500px;
-}
+/* ajusta el maximo de ancho y alto que puede tener la imagen de carrusel */
+/* .card img{
+    max-width: 600px;
+    max-height: 600px;
+} */
