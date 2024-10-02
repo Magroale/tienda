@@ -1,19 +1,8 @@
 // Importar módulos
 const express = require('express');
-const mongoose = require('mongoose');
 const path = require('path');
 const User = require('./models/user'); // Asegúrate de que esta ruta sea correcta
 const app = express();
-
-// Conectar a MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/tu_base_de_datos', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-}).then(() => {
-    console.log('Conexión exitosa a MongoDB');
-}).catch((error) => {
-    console.error('Error al conectar a MongoDB:', error);
-});
 
 // Configuración de Middleware
 app.use(express.json()); // Para procesar JSON
